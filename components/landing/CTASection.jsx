@@ -63,8 +63,8 @@ export default function CTASection() {
       <div className="max-w-4xl mx-auto">
         <div className="bg-gradient-to-br from-purple-600/30 via-pink-600/30 to-purple-600/30 backdrop-blur-lg border border-white/20 rounded-3xl p-12 relative overflow-hidden">
           {/* Background Pattern */}
-          <div className="absolute inset-0 bg-grid-white/5 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-          
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(0,0,0,0.4)_100%)]"></div>
+
           <div className="relative z-10">
             {/* Main CTA */}
             <div className="text-center mb-12">
@@ -74,21 +74,21 @@ export default function CTASection() {
               <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
                 Join thousands of businesses already transforming their operations with FutureSaaS
               </p>
-              
+
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/register">
-                  <Button 
-                    size="lg" 
-                    className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-6 text-lg font-semibold group"
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 px-8 py-6 text-lg font-semibold group shadow-lg shadow-purple-500/25 transition-all duration-200"
                   >
                     Start Free Trial
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold"
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold transition-all duration-200"
                 >
                   Schedule Demo
                 </Button>
@@ -101,7 +101,7 @@ export default function CTASection() {
                 <div className="w-full border-t border-white/20"></div>
               </div>
               <div className="relative flex justify-center">
-                <span className="bg-purple-600/50 px-4 py-1 text-sm text-white rounded-full">
+                <span className="bg-gradient-to-r from-purple-600/50 to-pink-600/50 px-4 py-1 text-sm text-white rounded-full">
                   Or subscribe to our newsletter
                 </span>
               </div>
@@ -127,9 +127,9 @@ export default function CTASection() {
                       disabled={loading}
                     />
                   </div>
-                  <Button 
-                    type="submit" 
-                    className="bg-white text-purple-600 hover:bg-gray-100 h-12 px-6 font-semibold"
+                  <Button
+                    type="submit"
+                    className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 h-12 px-6 font-semibold shadow-lg shadow-purple-500/25 transition-all duration-200"
                     disabled={loading}
                   >
                     {loading ? 'Subscribing...' : 'Subscribe'}

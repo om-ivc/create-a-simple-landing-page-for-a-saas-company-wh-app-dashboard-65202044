@@ -55,14 +55,22 @@ export default function FeaturesShowcase() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold text-white mb-4 transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
+          <h2
+            className={`text-4xl md:text-5xl font-bold text-white mb-4 transition-all duration-700 ${
+              mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+            }`}
+          >
             Powerful Features for
             <br />
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               Modern Teams
             </span>
           </h2>
-          <p className={`text-xl text-gray-300 max-w-2xl mx-auto transition-all duration-700 delay-100 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
+          <p
+            className={`text-xl text-gray-300 max-w-2xl mx-auto transition-all duration-700 delay-100 ${
+              mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+            }`}
+          >
             Everything you need to build, scale, and succeed in today's digital landscape
           </p>
         </div>
@@ -82,8 +90,12 @@ export default function FeaturesShowcase() {
         </div>
 
         {/* Bottom CTA */}
-        <div className={`mt-16 text-center transition-all duration-700 delay-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-lg border border-white/20 rounded-2xl p-8">
+        <div
+          className={`mt-16 text-center transition-all duration-700 delay-500 ${
+            mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-white mb-4">
               Ready to experience the difference?
             </h3>
@@ -91,15 +103,15 @@ export default function FeaturesShowcase() {
               Join thousands of teams already using FutureSaaS to transform their workflows
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a 
-                href="#pricing" 
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all"
+              <a
+                href="#pricing"
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200"
               >
                 View Pricing
               </a>
-              <a 
-                href="#contact" 
-                className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold border border-white/20 transition-all"
+              <a
+                href="#contact"
+                className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold border border-white/20 transition-all duration-200 backdrop-blur-sm"
               >
                 Contact Sales
               </a>

@@ -16,7 +16,7 @@ export default function FeatureCard({ icon: Icon, title, description, color, ind
 
   return (
     <div
-      className={`group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 ${
+      className={`group relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-500 ${
         mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
       onMouseEnter={() => setIsHovered(true)}
@@ -33,12 +33,12 @@ export default function FeatureCard({ icon: Icon, title, description, color, ind
       <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
         {title}
       </h3>
-      <p className="text-gray-400 leading-relaxed">
+      <p className="text-gray-300 leading-relaxed">
         {description}
       </p>
 
       {/* Hover Glow Effect */}
-      <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${color} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500 -z-10`}></div>
+      <div className={`absolute inset-0 rounded-xl bg-gradient-to-br ${color} opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500 -z-10`}></div>
 
       {/* Corner Accent */}
       <div className="absolute top-0 right-0 w-20 h-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
